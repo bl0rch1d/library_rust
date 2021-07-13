@@ -1,4 +1,4 @@
-use crate::entities::*;
+use crate::entities::Author;
 
 const NAME_LENGTH: usize = 20;
 const BIO_LENGTH: usize = 140;
@@ -15,8 +15,8 @@ impl Author {
         }
     }
 
-    pub fn to_s(self) {
-        println!("Name: {}. \nBio: {}", self.name, self.bio)
+    pub fn to_s(self) -> String {
+        format!("Name: {}. \nBio: {}", self.name, self.bio)
     }
 
     fn validate(name: &String, bio: &String) -> bool {
