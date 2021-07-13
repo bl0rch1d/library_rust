@@ -4,11 +4,13 @@ pub struct Author {
     pub bio: String
 }
 
+#[derive(Clone)]
 pub struct Book {
     pub author: Author,
     pub title: String
 }
 
+#[derive(Clone)]
 pub struct Reader {
     pub name: String,
     pub email: String,
