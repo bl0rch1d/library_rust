@@ -14,8 +14,8 @@ impl Book {
         }
     }
 
-    pub fn to_s(self) {
-        println!("Book title: {}. \nAuthor info:\n{}", self.title, self.author.to_s())
+    pub fn to_s(self) -> String {
+        format!("Book title: {}. \nAuthor info:\n{}", self.title, self.author.to_s())
     }
 
     fn validate(title: &String) -> bool {
