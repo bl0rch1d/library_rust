@@ -1,0 +1,40 @@
+---
+authors:
+  - name: Steven King
+    bio: Some bio for author
+  - name: Steven King
+    bio: Some bio for author
+books:
+  - author:
+      name: Steven King
+      bio: Some bio for author
+    title: Steven King
+readers:
+  - name: Fool
+    email: yofool@mail.com
+    city: Foolish city
+    street: Foolish street
+    house: "Fool's house"
+  - name: Fool
+    email: yofool@mail.com
+    city: Foolish city
+    street: Foolish street
+    house: "Fool's house"
+  - name: Fool
+    email: yofool@mail.com
+    city: Foolish city
+    street: Foolish street
+    house: "Fool's house"
+orders:
+  - book:
+      author:
+        name: Steven King
+        bio: Some bio for author
+      title: Steven King
+    reader:
+      name: Fool
+      email: yofool@mail.com
+      city: Foolish city
+      street: Foolish street
+      house: "Fool's house"
+    date: 12.12.2600
