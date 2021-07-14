@@ -3,8 +3,10 @@ mod author;
 mod book;
 mod reader;
 mod order;
+mod library;
 
 use entities::*;
+use library::Entity;
 
 
 fn main() {
@@ -22,5 +24,21 @@ fn main() {
     // println!("{}", author.to_s());
     // println!("{}", book.to_s());
     // println!("{}", reader.to_s());
-    println!("{}", order.to_s());
+    // println!("{}", order.to_s());
+
+    let mut library = Library::new(vec![], vec![], vec![], vec![]);
+    library.add_entity(Entity::Author(&author));
+    library.add_entity(Entity::Author(&author));
+    library.add_entity(Entity::Book(&book));
+    library.add_entity(Entity::Order(&order));
+    library.add_entity(Entity::Reader(&reader));
+    library.add_entity(Entity::Reader(&reader));
+    library.add_entity(Entity::Reader(&reader));
+    println!("{:?}", library.authors);
+    println!("\n============\n");
+    println!("{:?}", library.books);
+    println!("\n============\n");
+    println!("{:?}", library.orders);
+    println!("\n============\n");
+    println!("{:?}", library.readers);
 }

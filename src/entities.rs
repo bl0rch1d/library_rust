@@ -1,16 +1,16 @@
-#[derive(Clone)]
+#[derive(Clone, Debug)]
 pub struct Author {
     pub name: String,
     pub bio: String
 }
 
-#[derive(Clone)]
+#[derive(Clone, Debug)]
 pub struct Book {
     pub author: Author,
     pub title: String
 }
 
-#[derive(Clone)]
+#[derive(Clone, Debug)]
 pub struct Reader {
     pub name: String,
     pub email: String,
@@ -19,6 +19,7 @@ pub struct Reader {
     pub house: String
 }
 
+#[derive(Clone, Debug)]
 pub struct Order {
     pub book: Book,
     pub reader: Reader,
